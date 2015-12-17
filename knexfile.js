@@ -3,9 +3,14 @@
 module.exports = {
 
   development: {
-    client: 'sqlite3',
+    client: 'postgresql',
     connection: {
-      filename: './dev.sqlite3'
+      filename: 'userapp'
+    },
+    debug: true,
+    pool: {
+      min: 1,
+      max: 1
     }
   },
 
