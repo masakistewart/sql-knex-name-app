@@ -2,11 +2,25 @@
 <html>
 <head>
 	<title></title>
-	<% include ../partials/heade %>
+	<% include ../partials/head %>
 </head>
 <body>
 <% include ../partials/header %>
-
+	<div class="container">
+		<div class="jumbotron">
+			<table class="table">
+			<h1 class="text-center">Users</h1>
+				<tr>
+					<th>name</th>
+				</tr>
+				<tbody>
+					<% tableData.forEach(function(user) { %>
+						<td><%= users.name %></td>
+					<% }) %>
+				</tbody>
+			</table>
+		</div>
+	</div>
 
 <% include ../partials/footer %>
 </body>
