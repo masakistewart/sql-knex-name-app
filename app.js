@@ -4,7 +4,7 @@ var app = express();
 var userRoutes = require('./controllers/users');
 var morgan = require('morgan');
 
-app.get('/',function(req,res) { 
+app.get('/',function(req,res) {
   res.redirect('/users');
  });
 

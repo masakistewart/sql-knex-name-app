@@ -15,7 +15,9 @@
 				</tr>
 				<tbody>
 					<% tableData.forEach(function(user) { %>
-						<td><%= users.name %></td>
+						<tr>
+							<td><%= user.name %></td>
+						</tr>
 					<% }) %>
 				</tbody>
 			</table>
